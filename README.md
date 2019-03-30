@@ -1,4 +1,4 @@
-# FindMeAJob
+# Job Finder
 An simple application that search jobs using (Github & search.gov) API's 
 
 What it does: 
