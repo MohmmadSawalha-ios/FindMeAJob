@@ -1,0 +1,6 @@
+framework module Pods_JobFinder_MSawalha {
+  umbrella header "Pods-JobFinder.MSawalha-umbrella.h"
+
+  export *
+  module * { export * }
+}
