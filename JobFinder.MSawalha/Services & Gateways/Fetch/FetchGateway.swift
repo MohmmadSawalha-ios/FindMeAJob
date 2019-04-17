@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias fetchCallback =  (Result<ProvidersJobs?>) -> Void
+typealias fetchCallback =  (Result<[ConfigurableJob]?>) -> Void
 
 protocol  JobFinderGateway{
     func fetch(service: FetchService, callback: @escaping fetchCallback)

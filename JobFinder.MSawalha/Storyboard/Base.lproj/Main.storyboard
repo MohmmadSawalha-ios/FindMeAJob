@@ -59,5 +59,38 @@
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="142.57871064467767"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ayt-8j-hPI">
+            <objects>
+                <viewController id="d6b-3G-EyW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HbN-mq-6i3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mI-Zr-ESa">
+                                <rect key="frame" x="0.0" y="186" width="187.5" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAt-6w-bs4">
+                                <rect key="frame" x="188.5" y="186" width="187.5" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0mI-Zr-ESa" firstAttribute="leading" secondItem="HbN-mq-6i3" secondAttribute="leading" id="0Jn-AX-8Bz"/>
+                            <constraint firstItem="0mI-Zr-ESa" firstAttribute="width" secondItem="HbN-mq-6i3" secondAttribute="width" multiplier="0.5" id="7dB-zG-eSy"/>
+                            <constraint firstItem="mAt-6w-bs4" firstAttribute="width" secondItem="HbN-mq-6i3" secondAttribute="width" multiplier="0.5" id="M4B-GO-Vr2"/>
+                            <constraint firstItem="0mI-Zr-ESa" firstAttribute="baseline" secondItem="mAt-6w-bs4" secondAttribute="baseline" id="Sdt-FI-ZEy"/>
+                            <constraint firstItem="0mI-Zr-ESa" firstAttribute="top" secondItem="jg7-ZI-MFr" secondAttribute="top" constant="166" id="hM9-cb-te2"/>
+                            <constraint firstItem="mAt-6w-bs4" firstAttribute="leading" secondItem="0mI-Zr-ESa" secondAttribute="trailing" constant="1" id="zIj-r0-bMH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jg7-ZI-MFr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcj-84-ARX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.200000000000003" y="827.13643178410803"/>
+        </scene>
     </scenes>
 </document>

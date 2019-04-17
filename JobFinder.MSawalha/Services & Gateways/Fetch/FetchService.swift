@@ -27,15 +27,15 @@ extension FetchService {
     var urlString: String? {
         return provider.url
     }
-    func createModel(from json: Data) -> ProvidersJobs? {
-        var jobs = ProvidersJobs(git: [], gov: [])
+    func createModel(from json: Data) -> [ConfigurableJob]? {
+        var jobs: [ConfigurableJob] = []
         switch provider {
         case .git:
             guard let model =  json.decode(to: JobsGit.self) else { return nil }
-             jobs.git = model
+             jobs = model
         case .gov:
             guard let model =  json.decode(to: JobsGov.self) else { return nil }
-             jobs.gov = model
+             jobs = model
         default:
             return nil
         }

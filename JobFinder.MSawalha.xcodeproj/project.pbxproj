@@ -28,6 +28,26 @@
 		183438FF224FC3A800C4E81F /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438FE224FC3A800C4E81F /* Foundation.swift */; };
 		18343903224FCA3300C4E81F /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18343901224FCA3300C4E81F /* JobCell.swift */; };
 		18343904224FCA3300C4E81F /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18343902224FCA3300C4E81F /* JobCell.xib */; };
+		18B934E822675ADC006A7711 /* ResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438EA224FB05000C4E81F /* ResultList.swift */; };
+		18B934E922675ADC006A7711 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18343901224FCA3300C4E81F /* JobCell.swift */; };
+		18B934EA22675ADC006A7711 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438E3224FAC5500C4E81F /* ErrorCode.swift */; };
+		18B934EB22675ADC006A7711 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438F5224FB8AA00C4E81F /* UIKitExtensions.swift */; };
+		18B934EC22675ADC006A7711 /* PublicEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438E8224FAD6A00C4E81F /* PublicEnums.swift */; };
+		18B934ED22675ADC006A7711 /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438F7224FB90000C4E81F /* LandingVC.swift */; };
+		18B934EE22675ADC006A7711 /* FetchGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438F2224FB6BD00C4E81F /* FetchGateway.swift */; };
+		18B934EF22675ADC006A7711 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438FE224FC3A800C4E81F /* Foundation.swift */; };
+		18B934F022675ADC006A7711 /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438F0224FB6B300C4E81F /* FetchService.swift */; };
+		18B934F122675ADC006A7711 /* Jobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438FC224FBA2000C4E81F /* Jobs.swift */; };
+		18B934F222675ADC006A7711 /* Utlity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438E5224FAD3800C4E81F /* Utlity.swift */; };
+		18B934F322675ADC006A7711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438BA224FA9A200C4E81F /* AppDelegate.swift */; };
+		18B934F422675ADC006A7711 /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438E1224FAC0200C4E81F /* APIResource.swift */; };
+		18B934F522675ADC006A7711 /* InfoPlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438DF224FAAC100C4E81F /* InfoPlistManager.swift */; };
+		18B934F622675ADC006A7711 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183438EC224FB0CA00C4E81F /* APIClient.swift */; };
+		18B934F822675ADC006A7711 /* Pods_JobFinder_MSawalha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AE81104B0FF2EE5B153C9E /* Pods_JobFinder_MSawalha.framework */; };
+		18B934FA22675ADC006A7711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183438C3224FA9A400C4E81F /* LaunchScreen.storyboard */; };
+		18B934FB22675ADC006A7711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183438C1224FA9A400C4E81F /* Assets.xcassets */; };
+		18B934FC22675ADC006A7711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183438BE224FA9A200C4E81F /* Main.storyboard */; };
+		18B934FD22675ADC006A7711 /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18343902224FCA3300C4E81F /* JobCell.xib */; };
 		F7840A9DA8BF2D9E84AE1067 /* Pods_JobFinder_MSawalha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AE81104B0FF2EE5B153C9E /* Pods_JobFinder_MSawalha.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +86,8 @@
 		183438FE224FC3A800C4E81F /* Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
 		18343901224FCA3300C4E81F /* JobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
 		18343902224FCA3300C4E81F /* JobCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
+		18B9350322675ADC006A7711 /* JobFinder.MSawalha copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JobFinder.MSawalha copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B9350422675ADC006A7711 /* JobFinder.MSawalha copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "JobFinder.MSawalha copy-Info.plist"; path = "/Users/apple/Desktop/JobFinder/JobFinder.MSawalha/JobFinder.MSawalha copy-Info.plist"; sourceTree = "<absolute>"; };
 		2D35AC6F9972CC263FE0032B /* Pods-JobFinder.MSawalha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.MSawalha.release.xcconfig"; path = "Pods/Target Support Files/Pods-JobFinder.MSawalha/Pods-JobFinder.MSawalha.release.xcconfig"; sourceTree = "<group>"; };
 		2F8B5F70D6A1E1B6EF735D40 /* Pods-JobFinder.MSawalha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.MSawalha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JobFinder.MSawalha/Pods-JobFinder.MSawalha.debug.xcconfig"; sourceTree = "<group>"; };
 		77AE81104B0FF2EE5B153C9E /* Pods_JobFinder_MSawalha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFinder_MSawalha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +113,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18B934F722675ADC006A7711 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B934F822675ADC006A7711 /* Pods_JobFinder_MSawalha.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +132,7 @@
 				183438B8224FA9A200C4E81F /* Products */,
 				C1CF0750C6760B94AF1B1CCD /* Pods */,
 				343CDA69D7C8C27BE90ADE5D /* Frameworks */,
+				18B9350422675ADC006A7711 /* JobFinder.MSawalha copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +141,7 @@
 			children = (
 				183438B7224FA9A200C4E81F /* JobFinder.MSawalha.app */,
 				183438CB224FA9A400C4E81F /* JobFinder.MSawalhaTests.xctest */,
+				18B9350322675ADC006A7711 /* JobFinder.MSawalha copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,6 +334,26 @@
 			productReference = 183438CB224FA9A400C4E81F /* JobFinder.MSawalhaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		18B934E522675ADC006A7711 /* JobFinder.MSawalha copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B9350022675ADC006A7711 /* Build configuration list for PBXNativeTarget "JobFinder.MSawalha copy" */;
+			buildPhases = (
+				18B934E622675ADC006A7711 /* [CP] Check Pods Manifest.lock */,
+				18B934E722675ADC006A7711 /* Sources */,
+				18B934F722675ADC006A7711 /* Frameworks */,
+				18B934F922675ADC006A7711 /* Resources */,
+				18B934FE22675ADC006A7711 /* [CP] Embed Pods Frameworks */,
+				18B934FF22675ADC006A7711 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JobFinder.MSawalha copy";
+			productName = JobFinder.MSawalha;
+			productReference = 18B9350322675ADC006A7711 /* JobFinder.MSawalha copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -336,6 +388,7 @@
 			targets = (
 				183438B6224FA9A200C4E81F /* JobFinder.MSawalha */,
 				183438CA224FA9A400C4E81F /* JobFinder.MSawalhaTests */,
+				18B934E522675ADC006A7711 /* JobFinder.MSawalha copy */,
 			);
 		};
 /* End PBXProject section */
@@ -356,6 +409,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B934F922675ADC006A7711 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B934FA22675ADC006A7711 /* LaunchScreen.storyboard in Resources */,
+				18B934FB22675ADC006A7711 /* Assets.xcassets in Resources */,
+				18B934FC22675ADC006A7711 /* Main.storyboard in Resources */,
+				18B934FD22675ADC006A7711 /* JobCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +444,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JobFinder.MSawalha/Pods-JobFinder.MSawalha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18B934E622675ADC006A7711 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobFinder.MSawalha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18B934FE22675ADC006A7711 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JobFinder.MSawalha/Pods-JobFinder.MSawalha-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JobFinder.MSawalha/Pods-JobFinder.MSawalha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18B934FF22675ADC006A7711 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JobFinder.MSawalha/Pods-JobFinder.MSawalha-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3139415B0767655A4CAA333B /* [CP] Check Pods Manifest.lock */ = {
@@ -493,6 +610,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				183438D0224FA9A400C4E81F /* JobFinder_MSawalhaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B934E722675ADC006A7711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B934E822675ADC006A7711 /* ResultList.swift in Sources */,
+				18B934E922675ADC006A7711 /* JobCell.swift in Sources */,
+				18B934EA22675ADC006A7711 /* ErrorCode.swift in Sources */,
+				18B934EB22675ADC006A7711 /* UIKitExtensions.swift in Sources */,
+				18B934EC22675ADC006A7711 /* PublicEnums.swift in Sources */,
+				18B934ED22675ADC006A7711 /* LandingVC.swift in Sources */,
+				18B934EE22675ADC006A7711 /* FetchGateway.swift in Sources */,
+				18B934EF22675ADC006A7711 /* Foundation.swift in Sources */,
+				18B934F022675ADC006A7711 /* FetchService.swift in Sources */,
+				18B934F122675ADC006A7711 /* Jobs.swift in Sources */,
+				18B934F222675ADC006A7711 /* Utlity.swift in Sources */,
+				18B934F322675ADC006A7711 /* AppDelegate.swift in Sources */,
+				18B934F422675ADC006A7711 /* APIResource.swift in Sources */,
+				18B934F522675ADC006A7711 /* InfoPlistManager.swift in Sources */,
+				18B934F622675ADC006A7711 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +789,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z3G8NH624;
 				INFOPLIST_FILE = "$(SRCROOT)/JobFinder.MSawalha/Support/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "MSawalha.JobFinder-MSawalha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -666,7 +808,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z3G8NH624;
 				INFOPLIST_FILE = "$(SRCROOT)/JobFinder.MSawalha/Support/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "MSawalha.JobFinder-MSawalha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -683,7 +828,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z3G8NH624;
 				INFOPLIST_FILE = JobFinder.MSawalhaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "MSawalha.JobFinder-MSawalhaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -701,12 +850,54 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z3G8NH624;
 				INFOPLIST_FILE = JobFinder.MSawalhaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "MSawalha.JobFinder-MSawalhaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobFinder.MSawalha.app/JobFinder.MSawalha";
+			};
+			name = Release;
+		};
+		18B9350122675ADC006A7711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8B5F70D6A1E1B6EF735D40 /* Pods-JobFinder.MSawalha.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z3G8NH624;
+				INFOPLIST_FILE = "JobFinder.MSawalha copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MSawalha.JobFinder-MSawalha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B9350222675ADC006A7711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D35AC6F9972CC263FE0032B /* Pods-JobFinder.MSawalha.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z3G8NH624;
+				INFOPLIST_FILE = "JobFinder.MSawalha copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MSawalha.JobFinder-MSawalha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -736,6 +927,15 @@
 			buildConfigurations = (
 				183438D8224FA9A400C4E81F /* Debug */,
 				183438D9224FA9A400C4E81F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B9350022675ADC006A7711 /* Build configuration list for PBXNativeTarget "JobFinder.MSawalha copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B9350122675ADC006A7711 /* Debug */,
+				18B9350222675ADC006A7711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,33 +7,15 @@
 //
 
 import UIKit
+import Contacts
+import ContactsUI
 
 class LandingVC: UIViewController{
     //MARK:- Variables
     let searchController = UISearchController(searchResultsController: nil)
-    
-    fileprivate var providersJobs: ProvidersJobs? {
-        didSet {
-            tableView.reloadData()
-        }
-    }
     var filteredJobs = [ConfigurableJob]()
-    fileprivate var jobs: [ConfigurableJob]{
-        switch provider {
-        case .gov:
-            return providersJobs?.gov ?? []
-        case .git:
-            return providersJobs?.git ?? []
-        default:
-            return []
-        }
-    }
-    var provider  = ApiProvider.git {
-        didSet {
-            fetch(using: provider)
-        }
-    }
-    lazy var segments = UISegmentedControl()
+    fileprivate var jobs: [ConfigurableJob] = []
+    
     lazy var utils = ViewControllerUtils() // used to display activity indicator
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
@@ -49,24 +31,36 @@ class LandingVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareUI()
-        fetch(using: provider)
+        getJobs()
+    }
+    //MARK: - GetJobs Async requests.
+    func getJobs(){
+        let dispatchGroup = DispatchGroup()
+        
+        self.fetch(in: dispatchGroup, using: .git)
+        self.fetch(in: dispatchGroup, using: .gov)
+        
+        dispatchGroup.notify(queue: .main) {
+            print("Both functions complete 👍")
+            self.tableView.reloadData()
+        }
     }
     //MARK: private functions.
     private func prepareUI() {
         //segment
-        segments = UISegmentedControl(items: ApiProvider.segments)
-        segments.selectedSegmentIndex = 0
-        // Set up Frame and SegmentedControl
-        let frame = UIScreen.main.bounds
-        segments.frame = CGRect(x: frame.maxX + 10, y:frame.minY + 50,
-                                width: frame.width - 20,  height:frame.height*0.05)
-        // Style the Segmented Control
-        segments.layer.cornerRadius = 5.0  // Don't let background bleed
-        segments.backgroundColor = .white
-        segments.tintColor = .blue
-        segments.addTarget(self, action: #selector(handleSegment(_:)), for: .valueChanged)
-        // Add this custom Segmented Control to our view
-        self.tableView.tableHeaderView = segments // could be added out of the tableView, to achieve a sticky segment no matter what scrolled
+        //        segments = UISegmentedControl(items: ApiProvider.segments)
+        //        segments.selectedSegmentIndex = 0
+        //        // Set up Frame and SegmentedControl
+        //        let frame = UIScreen.main.bounds
+        //        segments.frame = CGRect(x: frame.maxX + 10, y:frame.minY + 50,
+        //                                width: frame.width - 20,  height:frame.height*0.05)
+        //        // Style the Segmented Control
+        //        segments.layer.cornerRadius = 5.0  // Don't let background bleed
+        //        segments.backgroundColor = .white
+        //        segments.tintColor = .blue
+        //        segments.addTarget(self, action: #selector(handleSegment(_:)), for: .valueChanged)
+        //        // Add this custom Segmented Control to our view
+        //        self.tableView.tableHeaderView = segments // could be added out of the tableView, to achieve a sticky segment no matter what scrolled
         //tableView
         tableView.delegate = self
         tableView.dataSource = self
@@ -81,14 +75,11 @@ class LandingVC: UIViewController{
         searchController.searchBar.placeholder = "Search Jobs"
         navigationItem.searchController = searchController
         definesPresentationContext = true
-
-    }
-    @objc func handleSegment(_ sender: UISegmentedControl){
-        provider = ApiProvider.init(rawValue: 1 << sender.selectedSegmentIndex)
+        
     }
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         refreshControl.endRefreshing() 
-        fetch(using: provider)
+        getJobs()
     }
 }
 //MARK: UITableView Delegate & DataSource
@@ -114,7 +105,8 @@ extension LandingVC: UITableViewDelegate, UITableViewDataSource {
 }
 //MARK: API
 extension LandingVC {
-    private func fetch(using provider: ApiProvider) {
+    private func fetch(in group: DispatchGroup, using provider: ApiProvider) {
+        group.enter()
         utils.showActivityIndicator(in: view)
         let gateway = JobFinderGatewayImplementation(apiClient: self.apiClient)
         gateway.fetch(service: FetchService(provider: provider)) { [weak self] result in
@@ -122,10 +114,16 @@ extension LandingVC {
             switch result {
             case .success(let val):
                 guard let value = val else { return }//unrwapping value returned, TODO: handle Decode Error.
-                self.providersJobs = value
+                if self.jobs.count == 0 {
+                    self.jobs = value
+                } else {
+                    self.jobs.append(contentsOf: value)
+                }
                 self.utils.hideActivityIndicator(from: self.view)
-            case .failure(let error): print(error) // TODO: Alert user what happend.
+            case .failure(let error):
+                print(error) // TODO: Alert user what happend.
             }
+            group.leave()
         }
     }
 }
@@ -141,7 +139,7 @@ extension LandingVC {
     func isFiltering() -> Bool {
         return searchController.isActive && !searchBarIsEmpty()
     }
-
+    
     func searchBarIsEmpty() -> Bool {
         // Returns true if the text is empty or nil
         return searchController.searchBar.text?.isEmpty ?? true
@@ -153,5 +151,4 @@ extension LandingVC {
         })
         tableView.reloadData()
     }
-
 }

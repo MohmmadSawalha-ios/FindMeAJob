@@ -34,6 +34,7 @@ class JobCell: UITableViewCell {
         lblLocation.text = String()
         logoView.image = UIImage(named: "DefaultPlaceHolder")
         super.prepareForReuse()
+        UIView().contentMode = .right
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
